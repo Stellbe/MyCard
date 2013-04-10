@@ -2,4 +2,5 @@
 
 technique::technique()
 {
+    m_prix = 0;
 }

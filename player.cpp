@@ -2,4 +2,5 @@
 
 Player::Player()
 {
+    m_nom = "";
 }
