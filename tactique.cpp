@@ -3,6 +3,6 @@
 tactique::tactique()
 {
     m_effectText = "";
-    m_puissanceTactique = "";
-    m_prixAppel = "";
+    m_puissanceTactique = 0;
+    m_prixAppel = 0;
 }

@@ -1,12 +1,16 @@
 #ifndef NINJA_H
 #define NINJA_H
 
+#include <vector>
+#include <string>
+
+using namespace std;
+
 class Ninja
 {
 public:
     Ninja();
 
-    std::vector<string> getCaracteristiques() { return caracteristiques(); }
     string getEffectText() { return m_effectText; }
     int getCombat() { return m_combat; }
     int getRenfort() { return m_renfort; }
@@ -16,15 +20,14 @@ public:
     int getCombatBlesse() { return m_combatBlesse; }
     string getStyle() { return m_style; }
 
-    void setCaracteristiques(std::vector vec) { caracteristiques = vec; }
-    void setEffectText(effect) { m_effectText = effect; }
-    void setCombat(combat) { m_combat = combat; }
-    void setRenfort(renfort) { m_renfort = renfort; }
-    void setTourAppel(tour) { m_tourAppel = tour; }
-    void setPrixAppel(prix) { m_prixAppel = prix; }
-    void setRenfortBlesse(renfort) { m_renfortBlesse = renfort; }
-    void setCombatBlesse(combat) { m_combatBlesse = combat; }
-    void setStyle(style) { m_style = style; }
+    void setEffectText(string effect) { m_effectText = effect; }
+    void setCombat(int combat) { m_combat = combat; }
+    void setRenfort(int renfort) { m_renfort = renfort; }
+    void setTourAppel(int tour) { m_tourAppel = tour; }
+    void setPrixAppel(int prix) { m_prixAppel = prix; }
+    void setRenfortBlesse(int renfort) { m_renfortBlesse = renfort; }
+    void setCombatBlesse(int combat) { m_combatBlesse = combat; }
+    void setStyle(string style) { m_style = style; }
 
 private:
     std::vector<string> caracteristiques();

@@ -3,6 +3,8 @@
 
 #include <QObject>
 
+using namespace std;
+
 class Player : public QObject
 {
 public:
@@ -10,7 +12,7 @@ public:
 
     string getNom() { return m_nom; }
 
-    void setNom(nom) { m_nom = nom; }
+    void setNom(string nom) { m_nom = nom; }
 
 private:
     string m_nom;

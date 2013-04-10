@@ -3,6 +3,8 @@
 
 #include <QObject>
 
+using namespace std;
+
 class Card : public QObject
 {
 public:
@@ -12,9 +14,9 @@ public:
     string getType() { return m_type; }
     string getSymbole() { return m_symbole; }
 
-    void setNom(nom) { m_nom = nom; }
-    void setType(type) { m_type = type; }
-    void setSymbole(symbole) { m_symbole = symbole; }
+    void setNom(string nom) { m_nom = nom; }
+    void setType(string type) { m_type = type; }
+    void setSymbole(string symbole) { m_symbole = symbole; }
 
 private:
     string m_nom;

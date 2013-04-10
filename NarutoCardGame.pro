@@ -1,9 +1,12 @@
 # -------------------------------------------------
 # Project created by QtCreator 2013-04-09T07:02:39
 # -------------------------------------------------
-QT += network \
-    xml
+QT += widgets \
+      network \
+      xml
+
 TARGET = NarutoCardGame
+
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \

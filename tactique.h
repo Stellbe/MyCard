@@ -2,6 +2,9 @@
 #define TACTIQUE_H
 
 #include <QObject>
+#include <string>
+
+using namespace std;
 
 class tactique : public QObject
 {
@@ -12,9 +15,9 @@ public:
         int getPuissanceTactique() { return m_puissanceTactique; }
         int getPrixAppel() { return m_prixAppel; }
 
-        void setEffectText(effect) { m_effectText = effect; }
-        void setPuissanceTactique(puissance) { m_puissanceTactique = puissance; }
-        void setPrixAppel(prix) { m_prixAppel = prix; }
+        void setEffectText(string effect) { m_effectText = effect; }
+        void setPuissanceTactique(int puissance) { m_puissanceTactique = puissance; }
+        void setPrixAppel(int prix) { m_prixAppel = prix; }
 
 private:
     string m_effectText;
