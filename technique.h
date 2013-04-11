@@ -3,10 +3,11 @@
 
 #include <QObject>
 
-#include <vector>
-#include <string>
+#include <QVector>
+#include <QString>
+#include <card.h>
 
-class technique : public QObject
+class technique : public Card
 {
 public:
     technique();
@@ -17,7 +18,7 @@ public:
 
 private:
     //condition, cible, effet (les trois parametres pour le tableau informations
-    std::vector<std::string> informations;
+    QVector<QString> informations;
     int m_prix;
 };
 

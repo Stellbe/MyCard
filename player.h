@@ -3,19 +3,17 @@
 
 #include <QObject>
 
-using namespace std;
-
 class Player : public QObject
 {
 public:
     Player();
 
-    string getNom() { return m_nom; }
+    QString getNom() { return m_nom; }
 
-    void setNom(string nom) { m_nom = nom; }
+    void setNom(QString nom) { m_nom = nom; }
 
 private:
-    string m_nom;
+    QString m_nom;
 };
 
 #endif // PLAYER_H
