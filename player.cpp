@@ -1,6 +1,14 @@
 #include "player.h"
 
-Player::Player()
+#include <QDebug>
+
+Player::Player(QString name)
 {
-    m_nom = "";
+    qDebug() << "New Player Created";
+    m_nom = name;
+}
+
+void Player::play()
+{
+    qDebug() << "Player use a card";
 }

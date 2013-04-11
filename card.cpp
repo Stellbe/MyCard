@@ -1,5 +1,9 @@
 #include "card.h"
 
+/*
+ * Represent a card
+ * @Method : -
+ */
 Card::Card()
 {
     m_nom = "";

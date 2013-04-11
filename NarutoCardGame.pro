@@ -21,12 +21,14 @@ SOURCES += main.cpp \
     ninja.cpp \
     technique.cpp \
     tactique.cpp \
-    client.cpp
+    client.cpp \
+    game/game.cpp
 HEADERS += mainwindow.h \
     card.h \
     player.h \
     ninja.h \
     technique.h \
     tactique.h \
-    client.h
+    client.h \
+    game/game.h
 FORMS += mainwindow.ui

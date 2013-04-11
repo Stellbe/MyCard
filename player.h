@@ -6,11 +6,13 @@
 class Player : public QObject
 {
 public:
-    Player();
+    Player(QString name);
 
     QString getNom() { return m_nom; }
 
     void setNom(QString nom) { m_nom = nom; }
+
+    void play();
 
 private:
     QString m_nom;
