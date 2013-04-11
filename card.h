@@ -6,7 +6,7 @@
 class Card : public QObject
 {
 public:
-    Card();
+    Card(QString type);
 
     QString getNom() { return m_nom; }
     QString getType() { return m_type; }

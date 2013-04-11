@@ -4,9 +4,9 @@
  * Represent a card
  * @Method : -
  */
-Card::Card()
+Card::Card(QString type)
 {
     m_nom = "";
-    m_type = "";
+    m_type = type;
     m_symbole = "";
 }
