@@ -7,6 +7,12 @@ QT += widgets \
 
 TARGET = NarutoCardGame
 
+DESTDIR = 01_build
+OBJECTS_DIR = 01_build/.obj
+MOC_DIR = 01_build/.moc
+RCC_DIR = 01_build/.rcc
+UI_DIR = 01_build/.ui
+
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \

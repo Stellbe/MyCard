@@ -16,6 +16,9 @@ public:
 protected:
     void changeEvent(QEvent *e);
 
+private slots:
+    void on_actionQuitter_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
